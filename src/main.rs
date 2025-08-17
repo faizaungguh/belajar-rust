@@ -1,7 +1,9 @@
 fn main() {
-    let cek = "tes nilai variabel";
     /*
-     * println! harus menyertakan ("{}", let) untuk dipanggil atau menghasilkan error
+     * immutable pada variabel, gunakan {} untuk setiap variabel
+     * maka ketika mencoba mengubah nilai variabel yang sudah ada akan memunculkan pesan error
      */
-    println!("{}", cek);
+    let number = 1;
+    let message = "hello";
+    println!("message number {}: {}", number, message);
 }
