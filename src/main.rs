@@ -1,21 +1,25 @@
 fn main() {
     /*
-     * mutable pada variabel, gunakan {} untuk setiap variabel
-     * maka ketika mencoba mengubah nilai variabel yang sudah ada tidak ada peringatan error
+     * variabel tanpa didefinisikan tipenya
      */
-    let mut number = 1;
+    let number = 1;
     let message1 = "hello";
     println!("message number {}: {}", number, message1);
 
-    number = 2;
-    let message2 = "world";
-    println!("message number {}: {}", number, message2);
+    /*
+     * multivariabel
+     */
+    let (angka, kata) = (23, "Yo");
+    println!("angkanya : {0}", angka);
+    println!("katanya : {0}", kata);
 
-    number = 3;
-    let message3: i8 = 24;
-    println!("message number {1}: {0}", message3, number);
-
-    println!("message number {}: {}", number, message3);
-    println!("message number {0}: {1}", number, message3);
-    println!("message number {1}: {0}", message3, number);
+    /*
+     * multivariabel dengan didefinisikan tipenya
+     */
+    let (var5, mut var6, var7): (i8, i8, i8) = (64, 12, 4);
+    println!("var5: {0}", var5);
+    println!("var6: {0}", var6);
+    var6 = 24;
+    println!("var6: {0}", var6);
+    println!("var7: {0}", var7);
 }
